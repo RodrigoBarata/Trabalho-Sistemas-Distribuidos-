@@ -7,7 +7,7 @@ import service.GameServiceImpl;
 public class ServerMain {
     public static void main(String[] args) {
         try {
-           
+            System.setProperty("java.rmi.server.hostname", "10.8.181.9");
             Registry registry = LocateRegistry.createRegistry(1099);
             
            
